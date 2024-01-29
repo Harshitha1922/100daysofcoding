@@ -1,0 +1,23 @@
+// C++ program to Count set
+// bits in an integer
+#include <bits/stdc++.h>
+using namespace std;
+
+unsigned int countSetBits(int i){
+    unsigned int count = 0;
+    while(i){
+        count+= i& 1;
+        i>>=1;
+    }
+    return count;
+}
+
+
+/* Program to test function countSetBits */
+int main()
+{
+    int i;
+    cin>>i;
+    cout << countSetBits(i);
+    return 0;
+}
