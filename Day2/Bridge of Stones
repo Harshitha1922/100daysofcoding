@@ -1,0 +1,10 @@
+void findJumps(int N, int X){
+    
+    // Your code here
+        int min1 = (X-1)/2;
+        int min2 = (N-X)/2;
+        cout<< min(min1,min2);
+    
+    cout << endl; 
+    
+}
