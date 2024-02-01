@@ -1,0 +1,27 @@
+class Solution {
+  public:
+  int fact(int i){
+      if(i ==1 or i==0){
+          return 1;
+      }
+      else{
+          return i*fact(i-1);
+      }
+  }
+    int isPerfect(int N) {
+        // code here
+        int n = N;
+        int res =0;
+        while(N>0){
+            int dig = N%10;
+            res = res+fact(dig);
+            N/=10;
+    }
+    if(n == res){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+    }
+};
