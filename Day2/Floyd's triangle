@@ -1,0 +1,17 @@
+class Solution
+{
+public:
+    void printFloydTriangle(int N)
+    {
+        // Write Your Code here
+        int k =1;
+        for(int i =1;i<=N;i++){
+            
+            for(int j=1;j<=i;j++){
+                cout<<k<<" ";
+                k++;
+            }
+            cout<<endl;
+        }
+    }
+};
